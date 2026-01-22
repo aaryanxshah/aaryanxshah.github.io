@@ -26,32 +26,37 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <article className="mx-auto max-w-2xl">
         <Link
           href="/#writing"
-          className="inline-flex items-center gap-2 text-sm text-warm-gray-500 transition-colors hover:text-foreground"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
         >
           <ArrowLeft size={16} />
           Back to writing
         </Link>
 
         <header className="mt-8">
-          <time className="text-sm text-warm-gray-400">
+          <time className="text-sm text-muted-foreground tracking-wider">
             {new Date(post.date).toLocaleDateString('en-US', {
               month: 'long',
               day: 'numeric',
               year: 'numeric',
             })}
           </time>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-foreground">
+          <h1 className="mt-2 text-4xl sm:text-5xl font-bold tracking-tight text-foreground">
             {post.title}
           </h1>
         </header>
 
-        <div className="prose prose-warm mt-12">
-          <p className="text-warm-gray-500">
-            {post.excerpt}
-          </p>
-          <p className="mt-8 text-warm-gray-400 italic">
-            Full blog post content coming soon...
-          </p>
+        <div className="mt-12 space-y-6 text-lg text-muted-foreground leading-relaxed">
+          <p>{post.excerpt}</p>
+          <p className="text-muted italic">Full blog post content coming soon...</p>
+        </div>
+
+        <div className="mt-16 pt-8 border-t border-border">
+          <Link
+            href="/#writing"
+            className="text-sm font-medium text-accent hover:underline"
+          >
+            View all posts
+          </Link>
         </div>
       </article>
     </div>

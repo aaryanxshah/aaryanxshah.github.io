@@ -1,31 +1,29 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { WaveformProvider } from '@/components/waveform/WaveformProvider';
-import { WaveformCanvas } from '@/components/waveform/WaveformCanvas';
-import { Header } from '@/components/layout/Header';
+import dynamic from 'next/dynamic';
 import { HeroSection } from '@/sections/HeroSection';
 import { AboutSection } from '@/sections/AboutSection';
 import { ProjectsSection } from '@/sections/ProjectsSection';
 import { WritingSection } from '@/sections/WritingSection';
 import { ContactSection } from '@/sections/ContactSection';
-import { SECTIONS } from '@/lib/constants';
-import { useActiveSection } from '@/hooks/useScrollProgress';
+import { CustomCursor } from '@/components/ui/CustomCursor';
+import { Header } from '@/components/layout/Header';
 
-function HomeContent() {
-  const sectionIds = SECTIONS.map((s) => s.id);
-  const activeSection = useActiveSection(sectionIds);
+// Dynamic import for 3D scene to avoid SSR issues
+const Scene3D = dynamic(
+  () => import('@/components/three/Scene3D').then((mod) => mod.Scene3D),
+  { ssr: false }
+);
 
+export default function Home() {
   return (
     <>
-      <Header activeSection={activeSection} />
+      <CustomCursor />
+      <Scene3D />
+      <Header />
+      <div className="noise" />
 
-      {/* Fixed waveform at bottom */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 pointer-events-none">
-        <WaveformCanvas />
-      </div>
-
-      <main>
+      <main className="relative z-10">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
@@ -33,23 +31,5 @@ function HomeContent() {
         <ContactSection />
       </main>
     </>
-  );
-}
-
-export default function Home() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  return (
-    <WaveformProvider>
-      <HomeContent />
-    </WaveformProvider>
   );
 }

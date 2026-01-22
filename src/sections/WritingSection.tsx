@@ -1,68 +1,82 @@
 'use client';
 
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Section } from '@/components/layout/Section';
-import { MotionDiv } from '@/components/motion/MotionDiv';
+import { ScrambleText } from '@/components/ui/KineticText';
 import { blogPosts } from '@/data/projects';
-import { ArrowRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
-function BlogPostCard({ post, index }: { post: (typeof blogPosts)[0]; index: number }) {
+function BlogCard({ post, index }: { post: (typeof blogPosts)[0]; index: number }) {
   return (
-    <MotionDiv delay={0.1 * (index + 1)}>
-      <motion.a
-        href={`/blog/${post.slug}`}
-        whileHover={{ x: 4 }}
-        transition={{ duration: 0.2 }}
-        className="group block border-b border-warm-gray-200 py-6 last:border-b-0"
-      >
-        <div className="flex items-start justify-between gap-4">
-          <div>
-            <time className="text-sm text-warm-gray-400">
-              {new Date(post.date).toLocaleDateString('en-US', {
-                month: 'long',
-                day: 'numeric',
-                year: 'numeric',
-              })}
-            </time>
-            <h4 className="mt-1 text-lg font-medium text-foreground group-hover:text-warm-gray-800">
-              {post.title}
-            </h4>
-            <p className="mt-1 text-warm-gray-500">{post.excerpt}</p>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+    >
+      <Link href={`/blog/${post.slug}`} data-hover>
+        <motion.article
+          whileHover={{ x: 20 }}
+          transition={{ duration: 0.3 }}
+          className="group py-8 border-b border-border"
+        >
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex-1">
+              <time className="text-sm text-muted-foreground tracking-wider">
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
+                })}
+              </time>
+              <h3 className="text-2xl sm:text-3xl font-bold mt-2 group-hover:text-accent transition-colors">
+                {post.title}
+              </h3>
+              <p className="text-muted-foreground mt-2 max-w-2xl">
+                {post.excerpt}
+              </p>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, x: -10 }}
+              whileHover={{ opacity: 1, x: 0 }}
+              className="text-accent mt-8"
+            >
+              <ArrowUpRight size={24} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+            </motion.div>
           </div>
-          <ArrowRight
-            size={20}
-            className="mt-6 shrink-0 text-warm-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-foreground"
-          />
-        </div>
-      </motion.a>
-    </MotionDiv>
+        </motion.article>
+      </Link>
+    </motion.div>
   );
 }
 
 export function WritingSection() {
   return (
-    <Section id="writing">
-      <MotionDiv>
-        <h2 className="text-sm font-medium uppercase tracking-widest text-warm-gray-500">
-          Writing
-        </h2>
-      </MotionDiv>
+    <section id="writing" className="min-h-screen py-32 px-6">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.8 }}
+          className="mb-16"
+        >
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-4">
+            <ScrambleText>Writing</ScrambleText>
+          </p>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+            Thoughts &
+            <br />
+            <span className="gradient-text">articles</span>
+          </h2>
+        </motion.div>
 
-      <MotionDiv delay={0.1}>
-        <h3 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          Thoughts & articles
-        </h3>
-        <p className="mt-4 max-w-2xl text-warm-gray-500">
-          Occasional writing about technology, health, and building things.
-        </p>
-      </MotionDiv>
-
-      <div className="mt-12">
-        {blogPosts.map((post, index) => (
-          <BlogPostCard key={post.slug} post={post} index={index} />
-        ))}
+        <div>
+          {blogPosts.map((post, index) => (
+            <BlogCard key={post.slug} post={post} index={index} />
+          ))}
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }

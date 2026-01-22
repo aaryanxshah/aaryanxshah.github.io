@@ -1,9 +1,7 @@
 'use client';
 
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Section } from '@/components/layout/Section';
-import { MotionDiv } from '@/components/motion/MotionDiv';
+import { KineticText, MagneticButton, ScrambleText } from '@/components/ui/KineticText';
 import { ArrowDown } from 'lucide-react';
 
 export function HeroSection() {
@@ -12,55 +10,88 @@ export function HeroSection() {
   };
 
   return (
-    <Section id="hero" className="flex items-center justify-center">
-      <div className="flex min-h-[80vh] flex-col items-center justify-center text-center">
-        <MotionDiv delay={0.2}>
-          <h1 className="text-5xl font-semibold tracking-tight text-foreground sm:text-6xl md:text-7xl">
-            Aaryan Shah
-          </h1>
-        </MotionDiv>
-
-        <MotionDiv delay={0.4}>
-          <p className="mt-6 max-w-xl text-lg text-warm-gray-500 sm:text-xl">
-            Building at the intersection of technology and health.
-            <br />
-            Software engineer passionate about impactful products.
+    <section
+      id="hero"
+      className="relative min-h-screen flex flex-col items-center justify-center px-6"
+    >
+      <div className="max-w-6xl mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">
+            <ScrambleText>Software Engineer</ScrambleText>
           </p>
-        </MotionDiv>
+        </motion.div>
 
-        <MotionDiv delay={0.6}>
-          <div className="mt-10 flex items-center gap-6">
-            <a
-              href="#projects"
-              className="rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-all hover:bg-warm-gray-800"
-            >
-              View Work
-            </a>
-            <a
-              href="#contact"
-              className="rounded-full border border-warm-gray-200 px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-warm-gray-400"
-            >
-              Get in Touch
-            </a>
-          </div>
-        </MotionDiv>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <KineticText
+            as="h1"
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none"
+          >
+            AARYAN
+          </KineticText>
+          <KineticText
+            as="h1"
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none gradient-text"
+          >
+            SHAH
+          </KineticText>
+        </motion.div>
 
-        <motion.button
-          onClick={scrollToAbout}
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="absolute bottom-12 text-warm-gray-400 transition-colors hover:text-foreground"
-          aria-label="Scroll to about section"
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-8 text-lg text-muted-foreground max-w-xl mx-auto"
         >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+          Building at the intersection of{' '}
+          <span className="text-foreground">technology</span> and{' '}
+          <span className="text-foreground">health</span>.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 }}
+          className="mt-12 flex flex-wrap items-center justify-center gap-4"
+        >
+          <MagneticButton
+            href="#projects"
+            className="px-8 py-4 bg-foreground text-background font-medium rounded-full hover:bg-accent transition-colors"
           >
-            <ArrowDown size={24} />
-          </motion.div>
-        </motion.button>
+            View Work
+          </MagneticButton>
+          <MagneticButton
+            href="#contact"
+            className="px-8 py-4 border border-border font-medium rounded-full hover:border-accent hover:text-accent transition-colors"
+          >
+            Get in Touch
+          </MagneticButton>
+        </motion.div>
       </div>
-    </Section>
+
+      <motion.button
+        onClick={scrollToAbout}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-12 text-muted-foreground hover:text-foreground transition-colors"
+        aria-label="Scroll down"
+        data-hover
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <ArrowDown size={24} />
+        </motion.div>
+      </motion.button>
+    </section>
   );
 }
