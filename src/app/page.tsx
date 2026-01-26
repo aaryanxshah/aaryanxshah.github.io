@@ -19,6 +19,14 @@ export default function Home() {
 
       <hr />
 
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Stanford University</strong> - MS Biomedical Data Science, 2025</li>
+        <li><strong>Stanford University</strong> - BS Computer Science, 2025</li>
+      </ul>
+
+      <hr />
+
       <h2>Research</h2>
       <ul>
         <li><strong>Research Project One</strong> - Description</li>
