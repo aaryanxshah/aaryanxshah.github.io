@@ -28,7 +28,6 @@ export default function Home() {
       <hr />
 
       <h2>Research</h2>
-
       <p>
         <strong>Research Project One</strong><br />
         <em>Lab or Institution, 2024</em><br />
@@ -77,8 +76,7 @@ export default function Home() {
 
       <h2>About</h2>
       <p>
-        I'm a software engineer passionate about building products that matter.
-        When I'm not coding, you'll find me training for triathlons or watching the Giants.
+        More about me!
       </p>
       <a href="mailto:aaryans@stanford.edu">Email</a> | <a href="https://github.com/aaryanxshah">GitHub</a> | <a href="https://linkedin.com/in/aaryanxshah">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=sfw7ATcAAAAJ&hl=en&oi=ao">Google Scholar</a>
 
