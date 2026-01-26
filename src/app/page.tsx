@@ -6,27 +6,25 @@ export default function Home() {
 
       <hr />
 
-      <h2>Links</h2>
+      <h2>Work</h2>
       <ul>
-        <li><a href="mailto:aaryans@stanford.edu">Email</a></li>
-        <li><a href="https://github.com/aaryanxshah">Github</a></li>
-        <li><a href="https://linkedin.com/in/aaryanxshah">Linkedin</a></li>
+        <li><strong>Company One</strong> - Role, 2024</li>
+        <li><strong>Company Two</strong> - Role, 2023</li>
       </ul>
 
       <hr />
 
-      <h2>Projects</h2>
+      <h2>Research</h2>
       <ul>
-        <li><strong>Project One</strong> - React, TypeScript, Node.js</li>
-        <li><strong>Project Two</strong> - Python, Machine Learning</li>
-        <li><strong>Project Three</strong> - Next.js, Tailwind</li>
+        <li><strong>Research Project One</strong> - Description</li>
+        <li><strong>Research Project Two</strong> - Description</li>
       </ul>
 
       <hr />
 
       <h2>Writing</h2>
       <ul>
-        <li><a href="/first-post">First Blog Post</a> (Jan 2025)</li>
+        <li><a href="/first-post">Summer 2025</a> (Oct 2025)</li>
         <li><a href="/second-post">Second Blog Post</a> (Jan 2025)</li>
       </ul>
 
@@ -37,6 +35,7 @@ export default function Home() {
         I'm a software engineer passionate about building products that matter.
         When I'm not coding, you'll find me training for triathlons or watching the Giants.
       </p>
+      <a href="mailto:aaryans@stanford.edu">Email</a> | <a href="https://github.com/aaryanxshah">GitHub</a> | <a href="https://linkedin.com/in/aaryanxshah">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=sfw7ATcAAAAJ&hl=en&oi=ao">Google Scholar</a>
 
       <hr />
 
