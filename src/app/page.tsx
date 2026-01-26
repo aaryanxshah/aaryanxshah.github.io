@@ -12,34 +12,66 @@ export default function Home() {
       <hr />
 
       <h2>Work</h2>
-      <ul>
-        <li><strong>Company One</strong> - Role, 2024</li>
-        <li><strong>Company Two</strong> - Role, 2023</li>
-      </ul>
+
+      <p>
+        <strong>Company One</strong><br />
+        <em>Role, 2024</em><br />
+        Short description of what you did here.
+      </p>
+
+      <p>
+        <strong>Company Two</strong><br />
+        <em>Role, 2023</em><br />
+        Short description of what you did here.
+      </p>
 
       <hr />
 
       <h2>Research</h2>
-      <ul>
-        <li><strong>Research Project One</strong> - Description</li>
-        <li><strong>Research Project Two</strong> - Description</li>
-      </ul>
+
+      <p>
+        <strong>Research Project One</strong><br />
+        <em>Lab or Institution, 2024</em><br />
+        Short description of the research.
+      </p>
+
+      <p>
+        <strong>Research Project Two</strong><br />
+        <em>Lab or Institution, 2023</em><br />
+        Short description of the research.
+      </p>
 
       <hr />
 
       <h2>Writing</h2>
-      <ul>
-        <li><a href="/first-post">Summer 2025</a> (Oct 2025)</li>
-        <li><a href="/second-post">Second Blog Post</a> (Jan 2025)</li>
-      </ul>
+
+      <p>
+        <strong><a href="/first-post">Summer 2025</a></strong><br />
+        <em>Oct 2025</em><br />
+        Short description of the post.
+      </p>
+
+      <p>
+        <strong><a href="/second-post">Second Blog Post</a></strong><br />
+        <em>Jan 2025</em><br />
+        Short description of the post.
+      </p>
 
       <hr />
 
       <h2>Education</h2>
-      <ul>
-        <li><strong>Stanford University</strong> - MS Biomedical Data Science, 2025</li>
-        <li><strong>Stanford University</strong> - BS Computer Science, 2025</li>
-      </ul>
+
+      <p>
+        <strong>Stanford University</strong><br />
+        <em>MS Biomedical Data Science, 2025</em><br />
+        Short description or focus area.
+      </p>
+
+      <p>
+        <strong>Stanford University</strong><br />
+        <em>BS Computer Science, 2025</em><br />
+        Short description or focus area.
+      </p>
 
       <hr />
 
