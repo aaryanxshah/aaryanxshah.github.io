@@ -40,7 +40,7 @@ export default function Home() {
 
       <hr />
 
-      <p>&copy; 2025 Aaryan Shah</p>
+      <p>&copy; 2026 Aaryan Shah</p>
     </>
   );
 }
