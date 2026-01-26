@@ -44,10 +44,6 @@ export default async function BlogPost({
 
   return (
     <>
-      <p><a href="/">← Back</a></p>
-
-      <hr />
-
       <h1>{post.title}</h1>
       <p><em>{post.date}</em></p>
 
