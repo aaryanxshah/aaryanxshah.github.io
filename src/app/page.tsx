@@ -8,9 +8,9 @@ export default function Home() {
 
       <h2>Links</h2>
       <ul>
-        <li>Email: <a href="mailto:hello@example.com">hello@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/aaryanxshah">github.com/aaryanxshah</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/aaryanxshah">linkedin.com/in/aaryanxshah</a></li>
+        <li><a href="mailto:aaryans@stanford.edu">Email</a></li>
+        <li><a href="https://github.com/aaryanxshah">Github</a></li>
+        <li><a href="https://linkedin.com/in/aaryanxshah">Linkedin</a></li>
       </ul>
 
       <hr />
