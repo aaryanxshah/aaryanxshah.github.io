@@ -2,7 +2,11 @@ export default function Home() {
   return (
     <>
       <h1>Aaryan Shah</h1>
-      <p>Software engineer building at the intersection of technology and health.</p>
+      <p>Building at the intersection of technology and health.</p>
+
+      <p> My LinkedIn is mostly updated with my professional experience. </p>
+
+      <p> When designing this page, I was in the middle of Poor Charlie's Almanack and had recently listened to the Berkshire Hathaway episode on the Acquired podcast.</p>
 
       <hr />
 
