@@ -4,9 +4,10 @@ export default function Home() {
       <h1>Aaryan Shah</h1>
       <p>Building at the intersection of technology and health.</p>
 
-      <p> My LinkedIn is mostly updated with my professional experience. </p>
+      <p> My <a href="https://linkedin.com/in/aaryanxshah">LinkedIn</a> is mostly updated with my professional experience. I am finishing my BS in Computer Science
+        and MS in Biomedical Data Science at Stanford. I am currently working at Canvas Medical as an engineer on the Applied AI team, working on agentic capabilities and clinical-grade AI governance within our EHR. </p>
 
-      <p> When designing this page, I was in the middle of Poor Charlie's Almanack and had recently listened to the Berkshire Hathaway episode on the Acquired podcast.</p>
+      <p> When designing this page, I was in the middle of <a href="https://www.stripe.press/poor-charlies-almanack">Poor Charlie's Almanack</a> and had recently listened to the  <a href="https://www.acquired.fm/episodes/berkshire-hathaway-part-i">Berkshire Hathaway episode on the Acquired podcast</a>.</p>
 
       <hr />
 
