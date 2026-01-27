@@ -6,4 +6,4 @@ out
 next-env.d.ts
 .env*
 .claude
-favicon
+favicon.ico
