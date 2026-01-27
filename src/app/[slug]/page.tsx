@@ -6,17 +6,17 @@ type BlogPost = {
 };
 
 const posts: Record<string, BlogPost> = {
-  'first-post': {
-    slug: 'first-post',
-    title: 'First Blog Post',
-    date: 'January 2025',
-    content: 'This is the content of my first blog post. Replace this with your actual content.',
+  'summer-2025': {
+    slug: 'summer-2025',
+    title: 'Summer 2025',
+    date: 'October 2025',
+    content: 'A brief recap of a hectic summer.',
   },
-  'second-post': {
-    slug: 'second-post',
-    title: 'Second Blog Post',
+  'solh': {
+    slug: 'solh',
+    title: 'Strong Opinions, Loosely Held',
     date: 'January 2025',
-    content: 'This is the content of my second blog post. Replace this with your actual content.',
+    content: 'And some other thoughts I hold dear.',
   },
 };
 

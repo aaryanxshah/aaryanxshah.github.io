@@ -45,15 +45,15 @@ export default function Home() {
       <h2>Writing</h2>
 
       <p>
-        <strong><a href="/first-post">Summer 2025</a></strong><br />
+        <strong><a href="/summer-2025">Summer 2025</a></strong><br />
         <em>Oct 2025</em><br />
-        Short description of the post.
+        A brief recap of a hectic summer.
       </p>
 
       <p>
-        <strong><a href="/second-post">Second Blog Post</a></strong><br />
+        <strong><a href="/solh">Strong Opinions, Loosely Held</a></strong><br />
         <em>Jan 2025</em><br />
-        Short description of the post.
+        And some other thoughts I hold dear.
       </p>
 
       <hr />
@@ -62,21 +62,22 @@ export default function Home() {
 
       <p>
         <strong>Stanford University</strong><br />
-        <em>MS Biomedical Data Science, 2025</em><br />
-        Short description or focus area.
+        <em>MS Biomedical Data Science, 2024-2026</em><br />
+        Concurrent MS program with my BSCS, primarily taking coursework in clinical ML and data science.
       </p>
 
       <p>
         <strong>Stanford University</strong><br />
-        <em>BS Computer Science, 2025</em><br />
-        Short description or focus area.
+        <em>BS Computer Science, 2022-2026</em><br />
+        Core CS coursework + concentration in computational biology.
       </p>
 
       <hr />
 
       <h2>About</h2>
       <p>
-        More about me!
+        I'm from Fremont, CA and therefore am an avid Bay Area sports fan.
+
       </p>
       <a href="mailto:aaryans@stanford.edu">Email</a> | <a href="https://github.com/aaryanxshah">GitHub</a> | <a href="https://linkedin.com/in/aaryanxshah">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=sfw7ATcAAAAJ&hl=en&oi=ao">Google Scholar</a>
 
