@@ -40,6 +40,9 @@ export default function Home() {
         Short description of the research.
       </p>
 
+      <p>
+        <a href="/research"> View talks, papers, and projects. </a>
+      </p>
       <hr />
 
       <h2>Writing</h2>
