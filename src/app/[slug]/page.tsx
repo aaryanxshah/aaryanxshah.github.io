@@ -6,17 +6,17 @@ type BlogPost = {
 };
 
 const posts: Record<string, BlogPost> = {
-  'summer-2025': {
-    slug: 'summer-2025',
-    title: 'Summer 2025',
-    date: 'October 2025',
-    content: 'A brief recap of a hectic summer.',
+  "summer-2025": {
+    slug: "summer-2025",
+    title: "Summer 2025",
+    date: "October 2025",
+    content: "A brief recap of a hectic summer.",
   },
-  'solh': {
-    slug: 'solh',
-    title: 'Strong Opinions, Loosely Held',
-    date: 'January 2025',
-    content: 'And some other thoughts I hold dear.',
+  solh: {
+    slug: "solh",
+    title: "Strong Opinions, Loosely Held",
+    date: "January 2025",
+    content: "And some other thoughts I hold dear.",
   },
 };
 
@@ -24,11 +24,7 @@ export function generateStaticParams() {
   return Object.keys(posts).map((slug) => ({ slug }));
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = posts[slug];
 
@@ -37,7 +33,9 @@ export default async function BlogPost({
       <>
         <h1>Not Found</h1>
         <p>This page does not exist.</p>
-        <p><a href="/">Back to home</a></p>
+        <p>
+          <a href="/">Back to home</a>
+        </p>
       </>
     );
   }
@@ -45,7 +43,9 @@ export default async function BlogPost({
   return (
     <>
       <h1>{post.title}</h1>
-      <p><em>{post.date}</em></p>
+      <p>
+        <em>{post.date}</em>
+      </p>
 
       <hr />
 
@@ -53,7 +53,9 @@ export default async function BlogPost({
 
       <hr />
 
-      <p><a href="/">← Back to home</a></p>
+      <p>
+        <a href="/">← Back to home</a>
+      </p>
     </>
   );
 }
