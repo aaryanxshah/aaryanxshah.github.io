@@ -9,6 +9,8 @@ export default function Home() {
 
       <p> When designing this page, I was in the middle of <a href="https://www.stripe.press/poor-charlies-almanack">Poor Charlie's Almanack</a> and had recently listened to the  <a href="https://www.acquired.fm/episodes/berkshire-hathaway-part-i">Berkshire Hathaway episode on the Acquired podcast</a>.</p>
 
+      <p> Also, selfishly, given the growing utilization (and dependence) of coding agents, it felt satisfying to make this on my own with just web searches for HTML syntax. </p>
+
       <hr />
 
       <h2>Work</h2>
