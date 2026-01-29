@@ -83,7 +83,7 @@ export default function Home() {
       </p>
       <p>
         <strong>
-          <a href="/solh">Strong Opinions, Loosely Held</a>
+          <a href="/solh">Strong opinions, loosely held</a>
         </strong>
         <br />
         <em>Jan 2025</em>
