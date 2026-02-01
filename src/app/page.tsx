@@ -21,7 +21,7 @@ export default function Home() {
         </a>{" "}
         and had recently listened to the{" "}
         <a href="https://www.acquired.fm/episodes/berkshire-hathaway-part-i" target="_blank">
-          Berkshire Hathaway episode on the Acquired podcast
+          first Berkshire Hathaway episode on the Acquired podcast
         </a>
         . As a result, the{" "}
         <a href="https://www.berkshirehathaway.com" target="_blank">
@@ -54,22 +54,9 @@ export default function Home() {
       </p>
       <hr />
       <h2>Research</h2>
+      Much of my research has been focused on using data and machine learning to improve health outcomes.
       <p>
-        <strong>Research Project One</strong>
-        <br />
-        <em>Lab or Institution, 2024</em>
-        <br />
-        Short description of the research.
-      </p>
-      <p>
-        <strong>Research Project Two</strong>
-        <br />
-        <em>Lab or Institution, 2023</em>
-        <br />
-        Short description of the research.
-      </p>
-      <p>
-        <a href="/research"> View talks, papers, and projects. </a>
+        <a href="/research"> View papers, talks, and projects. </a>
       </p>
       <hr />
       <h2>Writing</h2>
@@ -110,11 +97,11 @@ export default function Home() {
       <h2>About</h2>
       <p>
         I'm from Fremont, CA and therefore, am an avid Bay Area sports fan. I had a David Lee jersey in 2012 and I
-        consider that proof that I'm not a Warriors bandwagon.{" "}
+        consider that proof that I'm not a Warriors bandwagon (or any of our other teams).{" "}
       </p>
       <p>
         [February 2026] Will try to update these but currently reading Poor Charlie's Almanack, have switched from a lot
-        of house / Beatles to the Acquired podcast, and am trying to get better at golf to use the Stanford golf course
+        of house / Beatles to the Acquired podcast, and am trying to get better at golf to play the Stanford golf course
         at the discounted rates at least once.
       </p>
       <p>
