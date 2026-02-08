@@ -29,7 +29,7 @@ export default function Home() {
           Berkshire Hathaway website
         </a>{" "}
         played a rather instrumental role. Also, selfishly, given the growing utilization (and dependence) of coding
-        agents, it felt satisfying to make this on my own with just web searches for HTML syntax.{" "}
+        agents, it felt satisfying to make this on my own with Stack Overflow.{" "}
       </p>
       <hr />
       <h2>
@@ -102,7 +102,7 @@ export default function Home() {
       <p>
         [February 2026] Will try to update these but currently reading Poor Charlie's Almanack, have switched from a lot
         of house / Beatles to the Acquired podcast, and am trying to get better at golf to play the Stanford golf course
-        at the discounted rates at least once.
+        at the discounted rates for students at least once.
       </p>
       <p>
         <img src="/imgs/me.jpg" alt="Picture of Aaryan at Stanford's Camp Kesem in 2022" width={400}></img>
